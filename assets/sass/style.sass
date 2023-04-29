@@ -22,15 +22,14 @@
 .banner-bg
   background: url("../img/banner.jpg") no-repeat
   background-size: cover
-  min-height: 900px
+  min-height: 100vh
   position: relative
-  z-index: 4
-  &::after
+  z-index: 5
+  // z-index: 10
+  &::before
     content: ''
     position: absolute
-    top: 0
-    z-index: 5
-    left: 0
     width: 100%
     height: 100%
-    background: #0000004f
+    background: #00000085
+    z-index: 10
