@@ -5,8 +5,17 @@
     text-align: center
     color: $white
     font-size: 50px
-    width: 900px
+    max-width: 100%
     margin: 0 auto
     padding-top: 280px
     line-height: 65px
     // text-shadow: 20px 10px 10px 10px #000
+
+@include media(700px)
+  .title
+    font-size: 36px !important
+    line-height: 0
+
+@include media(670px)
+  .title
+    padding-top: 0

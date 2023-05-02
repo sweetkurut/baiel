@@ -30,12 +30,23 @@
   text-align: center;
   color: #fff;
   font-size: 50px;
-  width: 900px;
+  max-width: 100%;
   margin: 0 auto;
   padding-top: 280px;
   line-height: 65px;
 }
 
+@media (max-width: 700px) {
+  .title {
+    font-size: 36px !important;
+    line-height: 0;
+  }
+}
+@media (max-width: 670px) {
+  .title {
+    padding-top: 0;
+  }
+}
 .header {
   padding: 35px;
   position: relative;
