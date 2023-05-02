@@ -40,11 +40,15 @@
   .title {
     font-size: 36px !important;
     line-height: 0;
+    padding: 5px;
+    padding-top: 0px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 340px) {
   .title {
-    padding-top: 0;
+    font-size: 28px !important;
+    line-height: 40px !important;
+    padding-top: 180px !important;
   }
 }
 .header {
