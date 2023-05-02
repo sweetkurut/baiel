@@ -84,6 +84,38 @@
   border-bottom: solid 1px #bdb8b8;
 }
 
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 570px) {
+  .hamburger {
+    display: block;
+    z-index: 10;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100vh;
+    background: #ad944f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.8s all;
+    z-index: 6;
+  }
+  .nav.is-active {
+    transform: translateX(0);
+  }
+  .nav.is-active .nav__link {
+    color: #000;
+    font-weight: bold;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -100,7 +132,7 @@
 }
 
 .banner-bg {
-  background: url("../img/banner.jpg") no-repeat;
+  background: url("../img/banner.jpg") no-repeat center;
   background-size: cover;
   min-height: 100vh;
   position: relative;

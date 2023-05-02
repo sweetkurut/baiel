@@ -37,3 +37,31 @@
 
 .line
   border-bottom: solid 1px $gray
+
+.hamburger
+  display: none
+
+@include media(570px)
+  .hamburger
+    display: block
+    z-index: 10
+
+  .nav
+    position: fixed
+    top: 0
+    right: 0
+    width: 150px
+    height: 100vh
+    background: #ad944f
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    transform: translateX(100%)
+    transition: .8s all
+    z-index: 6
+  .nav.is-active
+    transform: translateX(0)
+    .nav__link
+      color: $black
+      font-weight: bold
