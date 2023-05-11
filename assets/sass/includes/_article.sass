@@ -1,28 +1,109 @@
+.sub-down__desc
+  padding-top: 100px
+  .sub-down__title
+    text-align: center
+    color: $white
+    font-size: 39px
+
+.article-bg
+  // background: rgb(238,174,202)
+  // background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)
+  background: #F3F4F6
+
+.article
+  padding-top: 50px
+
+// .article.element-show
+//   opacity: 1
+//   transition: .3s all
+//   transform: translateX(0)
+//   overflow: hidden
+
+.subDesc
+  font-size: 30px
+  // text-align: center
+  color: #260a2f
+  line-height: 45px
 
 .article__title
-  font-size: 34px
+  font-size: 40px
   padding: 20px
   text-decoration: underline
   padding-top: 40px
   margin-bottom: 40px
 
-.swiper-wrapper
-  background: #000
-
-.swiper-slide
-  display: flex
-  justify-content: center
-  text-align: center
-  font-size: 18px
-  background: #fff
-  display: flex
-  justify-content: center
-  align-items: center
-
-.swiper
-  width: 500px
-  height: auto
+.article-sub__title
+  font-size: 20px
 
 .slider-images
-  width: 330px
-  height: 350px
+  width: 300px
+  height: 300px
+  object-fit: cover
+  border-radius: 20px
+
+.swiper
+  width: 100%
+  padding-top: 50px
+  padding-bottom: 50px
+  display: flex
+  flex-direction: column
+  gap: 25px
+  align-items: center
+  justify-content: center
+
+  .subTitle
+    font-size: 18px
+
+  &-slide
+    background-position: center
+    background-size: cover
+    width: 300px
+    height: 300px
+
+    // &-slide img
+    //   display: block
+    //   width: 100%
+
+.main-blog__dresses
+  display: flex
+  padding-top: 100px
+  flex-direction: column
+
+// .main-blog__dresses.element-show
+
+.mySwiper
+  display: flex
+  justify-content: center
+
+.dress-title
+  font-size: 26px
+  margin-bottom: 40px
+
+.desc-order
+  font-size: 20px
+  margin-bottom: 8px
+
+@include media(320px)
+  .swiper-button-next,
+  .swiper-button-prev
+    padding-top: 300px
+
+  .sub-down__title
+    font-size: 17px !important
+    text-align: center
+    font-weight: 500
+
+  .subDesc
+    padding: 10px
+    font-size: 22px
+    line-height: 30px
+
+  .blog-dress__desc
+    padding: 10px
+    font-size: 16px
+    .dress-title
+      text-align: center
+      font-size: 22px
+
+  .article__title
+    font-size: 26px

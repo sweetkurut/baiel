@@ -22,27 +22,43 @@ document.addEventListener("click", (e) => {
     toggleMenu();
   }
 });
-
-// slider-images
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  // direction: "vertical",
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-fraction",
-    pagination: "fraction",
+// swiper slider
+let swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  // },
 });
+
+// function onEntry(entry) {
+//   entry.forEach((change) => {
+//     if (change.isIntersecting) {
+//       change.target.classList.add("element-show");
+//     }
+//   });
+// }
+
+// let options = {
+//   threshold: [0.5],
+// };
+
+// let observer = new IntersectionObserver(onEntry, options);
+
+// let elements = document.querySelectorAll(".article");
+// for (let elem of elements) {
+//   observer.observe(elem);
+// }
