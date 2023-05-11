@@ -226,6 +226,11 @@
   padding: 35px;
   position: relative;
   z-index: 12;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  backdrop-filter: blur(10px);
 }
 .header__container {
   display: flex;
@@ -248,6 +253,7 @@
   color: #bdb8b8;
   transition: 0.6s all;
   position: relative;
+  color: #fff;
 }
 .header__container .nav__link::before {
   content: "";
@@ -264,6 +270,12 @@
   height: 2px;
   background: #ffffff;
   color: #fff;
+}
+
+.header.scrolled {
+  transition: 0.2s all ease-in-out;
+  background: #250853;
+  box-shadow: 12px 0px 12px 4px #250853;
 }
 
 .line {
@@ -285,7 +297,7 @@
     right: 0;
     width: 150px;
     height: 100vh;
-    background: #50431f;
+    background: #080335;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -298,7 +310,7 @@
     transform: translateX(0);
   }
   .nav.is-active .nav__link {
-    color: #000;
+    color: #fff;
     font-weight: bold;
   }
 }

@@ -44,21 +44,15 @@ let swiper = new Swiper(".mySwiper", {
   // },
 });
 
-// function onEntry(entry) {
-//   entry.forEach((change) => {
-//     if (change.isIntersecting) {
-//       change.target.classList.add("element-show");
-//     }
-//   });
-// }
-
-// let options = {
-//   threshold: [0.5],
-// };
-
-// let observer = new IntersectionObserver(onEntry, options);
-
-// let elements = document.querySelectorAll(".article");
-// for (let elem of elements) {
-//   observer.observe(elem);
-// }
+// меняет задний фон шапки при скролле
+window.addEventListener("scroll", function () {
+  let header = document.querySelector(".header");
+  let logo = document.querySelector(".logo");
+  if ((window, scrollY > 850)) {
+    header.classList.add("scrolled");
+    logo.style.color = "#fff";
+  } else {
+    header.classList.remove("scrolled");
+    logo.style.color = "#fff";
+  }
+});

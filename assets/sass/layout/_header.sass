@@ -2,6 +2,11 @@
   padding: 35px
   position: relative
   z-index: 12
+  position: fixed
+  top: 0
+  width: 100%
+  color: #fff
+  backdrop-filter: blur(10px)
   &__container
     display: flex
     align-items: center
@@ -20,6 +25,7 @@
         color: $gray
         transition: .6s all
         position: relative
+        color: #fff
         &::before
           content: ''
           position: absolute
@@ -34,6 +40,13 @@
           height: 2px
           background: #ffffff
           color: $white
+
+.header.scrolled
+  transition: .2s all ease-in-out
+  background: #250853
+  // backdrop-filter: blur(15px)
+  // opacity: 0.9
+  box-shadow: 12px 0px 12px 4px #250853
 
 .line
   border-bottom: solid 1px $gray
@@ -52,7 +65,7 @@
     right: 0
     width: 150px
     height: 100vh
-    background: #50431f
+    background: #080335
     display: flex
     align-items: center
     justify-content: center
@@ -63,5 +76,5 @@
   .nav.is-active
     transform: translateX(0)
     .nav__link
-      color: $black
+      color: $white
       font-weight: bold
