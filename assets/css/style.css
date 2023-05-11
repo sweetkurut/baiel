@@ -78,7 +78,7 @@
 }
 
 .article-bg {
-  background: #F3F4F6;
+  background: #d1d4d9;
 }
 
 .article {
@@ -89,6 +89,14 @@
   font-size: 30px;
   color: #260a2f;
   line-height: 45px;
+}
+
+.order-info__desc {
+  font-size: 24px;
+  padding-top: 30px;
+  opacity: 0.8;
+  font-weight: 500;
+  padding: 12px;
 }
 
 .article__title {
@@ -151,6 +159,33 @@
   margin-bottom: 8px;
 }
 
+.order-title {
+  font-size: 26px;
+  padding-top: 35px;
+}
+
+.order-text {
+  font-size: 20px;
+  padding-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .subDesc {
+    padding: 12px;
+  }
+  .order-info__desc {
+    padding: 12px;
+  }
+  .main-blog__dresses {
+    padding: 12px;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+}
 @media (max-width: 320px) {
   .swiper-button-next,
   .swiper-button-prev {
@@ -176,6 +211,15 @@
   }
   .article__title {
     font-size: 26px;
+  }
+  .order-title {
+    font-size: 24px;
+  }
+  .order__desc {
+    padding: 12px;
+  }
+  .dress-title {
+    font-size: 20px;
   }
 }
 .header {
