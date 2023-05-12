@@ -10,7 +10,7 @@
   padding-top: 45px
   flex-direction: column
   align-items: center
-  gap: 50px
+  // gap: 50px`
   padding: 15px
 
 .text-about
@@ -19,12 +19,52 @@
   line-height: 35px
   font-size: 24px
   color: #000
+
+.text-about__factory
+  font-size: 24px
   opacity: 0.9
+  color: #000
+  line-height: 35px
+  padding-top: 35px
 
 .map-title
   padding-top: 75px
   padding-bottom: 45px
   font-size: 26px
+
+.diplomas
+  padding-top: 56px
+  display: flex
+  flex-direction: column
+  gap: 40px
+  padding-bottom: 50px
+
+.diplom-img
+  width: 250px
+  height: 300px
+  .diplom__image
+    max-width: 100%
+    height: 100%
+    object-fit: cover
+    // border-radius: 12px
+    border-bottom-left-radius: 40px
+    transition: .5s all
+    &:hover
+      transform: scale(1.04)
+      box-shadow: 4px 6px 10px 4px #0000006c
+
+.diplom-title
+  text-align: center
+  font-size: 42px
+
+.dipom2
+  display: flex
+  justify-content: center
+  gap: 25px
+
+.diplom3
+  display: flex
+  gap: 25px
 
 iframe
   border-radius: 14px
@@ -87,10 +127,47 @@ iframe
 .name-city
   padding-bottom: 35px
 
+@include media(990px)
+  .diplomas
+    max-width: 100%
+    display: flex
+    gap: 45px
+    justify-content: center
+  .diplom-img
+    width: 200px
+    height: auto
+    object-fit: cover
+    .diplom__image
+      width: 100%
+
+  .diplom3
+    display: flex
+    gap: 14px
+  .dipom2
+    display: flex
+    gap: 14px
+
+@include media(770px)
+  .diplom-img
+    object-fit: cover
+
 @include media(570px)
+  .diplomas
+    display: flex
+    justify-content: center
+
   .footer-social__media
     display: flex
     flex-direction: column
+
+  .dipom2
+    display: flex
+    flex-direction: column
+    justify-content: center
+  .diplom3
+    display: flex
+    flex-direction: column
+    justify-content: center
 
 @include media(465px)
   .footer-social
@@ -99,3 +176,14 @@ iframe
   .logo-footer
     font-size: 40px
     padding-bottom: 120px
+  .diplomas
+    display: flex
+    flex-wrap: wrap
+
+@include media(340px)
+  .diplomas
+    display: flex
+    justify-content: center
+    align-items: center
+  .diplom-title
+    font-size: 35px
