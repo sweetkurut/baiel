@@ -1,5 +1,5 @@
 .header
-  padding: 35px
+  padding: 15px
   position: relative
   z-index: 12
   position: fixed
@@ -12,9 +12,11 @@
     align-items: center
     justify-content: space-between
     .logo
-      font-weight: 700
-      font-size: 36px
-      color: #fff
+      width: 170px
+      height: 150px
+      object-fit: cover
+      overflow: hidden
+
     .nav
       display: flex
       gap: 45px
@@ -41,11 +43,12 @@
           background: #ffffff
           color: $white
 
+.logo_image
+  width: 100%
+
 .header.scrolled
   transition: .2s all ease-in-out
   background: #231638
-  // backdrop-filter: blur(15px)
-  // opacity: 0.9
   box-shadow: 12px 0px 12px 4px #250853
 
 .line
